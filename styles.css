@@ -24,6 +24,7 @@ body {
 .plan {
    flex-direction: row;
     justify-content: space-between;
+    padding: 20px;
 } 
 p
  /* .container {
