@@ -1,50 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    font-family: 'Red Hat Display','Verdana';
+}
 
 body {
     height: 100%;
+    background-color: hsl(225, 100%, 94%);
     background-image: url("assets/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
 }
 
 .container {
+    height: max-content;
+    width: 25rem;
+    margin: 5% auto 0 auto;
+    /* position: relative; */
+    background-color:#fff;
+    border-radius:20px;
     
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    margin-top: 5%;
 }
-.order {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    width:25rem;
+.heroimage {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
+.text h3{
+    text-align: center;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.text p {
+    color:hsl(224, 23%, 55%);
+    text-align: center;
+    width: 70%;
+    margin:auto
+}
+
 .plan {
-   flex-direction: row;
+    height: 36px;
+    margin: 40px auto 10px auto;
+    padding-left: 20px;
+    background-color: hsl(225, 100%, 98%);
+    width: 20rem;
+    display: flex;
     justify-content: space-between;
     padding: 20px;
+    border-radius: 10px;
 } 
-p
- /* .container {
-     width: 30rem;
-     height: 20rem;
-      background-color:deeppink; 
-     border-radius: 20px; 
-      display: flex;
-     align-items: center;
-     justify-content: center; 
-     /* margin-left:auto;
-     margin-right: auto;
-     
- /* }
- .order h3 {
-     word-spacing: 5px;
-     letter-spacing: 2px;  
- }
- .order p {
-     /* width: 10rem; 
-     margin-bottom: 20px;
- /* }
-  
+.plan a:hover {
+    opacity: 0.5;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.icon-music {
+    object-fit: cover;
+    height: min-content;
+    position: relative;
+    bottom: 10px;
+}
+.plan-middle {
+    position: relative;
+    bottom: 27px;
+    margin-left: -10px;
+    right: 27px;
+}
+.plan-middle h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.plan-middle p {
+    position: relative;
+    bottom: 13px;
+    color: hsl(224, 23%, 55%)
+}
+.paymentbtn {
+    background-color: blue;
+    width: 20rem;
+    text-align: center;
+    margin: 30px auto 30px auto;
+    justify-items: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+.paymentbtn:hover{
+    opacity: 0.5;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+.paymentlink {
+    text-decoration: none;
+    color:white;
+    
+}
+.cancel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      
+}
+
+.cancel a {
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.cancel a:hover {
+    color: black;
+}
